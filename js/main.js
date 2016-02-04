@@ -1,6 +1,8 @@
+//Arrays
 var iceCream = [ 'Chocolate', 'Peanut Butter', 'Hazelnut' ];
 iceCream.push( 'Cookie Dough' );
 
+//Presidents
 var presidents = [
     { firstName:'Barack', lastName:'Obama', termLength:'8', party:'Democrat',
 yearsOfPresidency:'2009-2017' },
@@ -14,3 +16,33 @@ yearsOfPresidency:'1989-1993' },
 yearsOfPresidency:'1981-1989' }
 ];
 console.log( presidents[ 2 ].firstName + ' ' + presidents[ 2 ].lastName );
+
+//Functions
+function howdy() {
+    console.log( 'Chloe Weber says happy February!' );
+}
+console.log( howdy() );
+
+var numba = function( string ) {
+    if ( string.length > 7 ) {
+    console.log( 'I’m sorry, but that’s too many to count.' );
+} else if ( string.length < 7 ) {
+    console.log( 'What a short little word!' );
+} else {
+    console.log( '7, what a perfect choice!' );
+}
+};
+console.log( numba( '7' ) );
+console.log( numba( 'seventy' ) );
+console.log( numba( 'university' ) );
+
+function callback( value ) {
+    value();
+}
+function value() {
+    console.log( 'Inception is a great movie!' );
+}
+function inception( callback, value ) {
+    callback( value );
+}
+inception( callback, value );
