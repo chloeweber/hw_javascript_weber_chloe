@@ -36,8 +36,8 @@ numba( '7' );
 numba( 'seventy' );
 numba( 'university' );
 
-function callThisFunction( value ) {
-    value();
+function callThisFunction( func ) {
+    func();
 }
 function value() {
     console.log( 'Inception is a great movie!' );
