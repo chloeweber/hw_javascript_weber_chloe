@@ -36,7 +36,7 @@ numba( '7' );
 numba( 'seventy' );
 numba( 'university' );
 
-function callback( value ) {
+function callThisFunction( value ) {
     value();
 }
 function value() {
@@ -45,4 +45,4 @@ function value() {
 function inception( callback, value ) {
     callback( value );
 }
-inception( callback, value );
+inception( callThisFunction, value );
