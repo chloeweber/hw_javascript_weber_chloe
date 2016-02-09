@@ -21,7 +21,7 @@ console.log( presidents[ 2 ].firstName + ' ' + presidents[ 2 ].lastName );
 function howdy() {
     console.log( 'Chloe Weber says happy February!' );
 }
-console.log( howdy() );
+howdy();
 
 var numba = function( string ) {
     if ( string.length > 7 ) {
@@ -32,17 +32,17 @@ var numba = function( string ) {
     console.log( '7, what a perfect choice!' );
 }
 };
-console.log( numba( '7' ) );
-console.log( numba( 'seventy' ) );
-console.log( numba( 'university' ) );
+numba( '7' );
+numba( 'seventy' );
+numba( 'university' );
 
-function callback( value ) {
-    value();
+function callThisFunction( func ) {
+    func();
 }
-function value() {
+function logGreatMovie() {
     console.log( 'Inception is a great movie!' );
 }
 function inception( callback, value ) {
     callback( value );
 }
-inception( callback, value );
+inception( callThisFunction, logGreatMovie );
