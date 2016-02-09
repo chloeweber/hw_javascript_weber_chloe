@@ -39,10 +39,10 @@ numba( 'university' );
 function callThisFunction( func ) {
     func();
 }
-function value() {
+function logGreatMovie() {
     console.log( 'Inception is a great movie!' );
 }
 function inception( callback, value ) {
     callback( value );
 }
-inception( callThisFunction, value );
+inception( callThisFunction, logGreatMovie );
